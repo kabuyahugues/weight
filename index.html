@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/scss/styles.min.css">
+</head>
+<body>
+    <div class="connexion">
+        <div class="uppercase">
+            <img src="./src/img/w8-cropped.png" alt="logo">
+            <h1>Hej!</h1>
+            <p>Avant tout, merci de nous communiquer les informations suivantes :</p>
+        </div>
+        <form action="">
+            <div>
+                <label for="prenom" class="label">Prénom : </label>
+                <input type="text" name="prenom" class="input input-nom" placeholder="Par ex : huges" value="">
+            </div>
+            <div>
+                <label for="date" class="label">Quand êtes-vous née ?: </label>
+                <input type="date" name="date" class="input" placeholder="" value="">
+            </div>
+            <div>
+                <label for="kilo" class="label">Quel est votre poids (en kg) ? :  </label>
+                <input type="text" name="kilo" class="input input-date" placeholder="Par ex : 53,40 kg" value="">
+            </div>
+            <div>
+                <label for="taille" class="label">Quel est votre taille (en cm) ? : </label>
+                <input type="text" name="taille" class="input input-taille" placeholder="Par ex : 189 si vous mesurez 1m89" value="">
+            </div>
+            <button type="submit" class="btn">Envoyer</button>
+        </form>
+    </div>
+    <div>
+
+    </div>
+    <script src="./src/js/app.js"></script>
+</body>
+</html>

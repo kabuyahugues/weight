@@ -1,0 +1,13 @@
+@use '../abstracts' as *;
+
+.btn{
+    display: block;
+    padding: 0.5rem 1rem;
+    background-color: $blanc;
+    border-radius: 5px;
+    border: 0.2rem solid tomato;
+    cursor: pointer;
+    &:hover{
+        
+    }
+}
