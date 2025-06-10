@@ -16,26 +16,44 @@
         <form action="">
             <div>
                 <label for="prenom" class="label">Prénom : </label>
-                <input type="text" name="prenom" class="input input-nom" placeholder="Par ex : huges" value="">
+                <input type="text" name="prenom" class="input input-nom" placeholder="Par ex : huges" value="hugues">
             </div>
             <div>
                 <label for="date" class="label">Quand êtes-vous née ?: </label>
-                <input type="date" name="date" class="input" placeholder="" value="">
+                <input type="date" name="date" class="input" placeholder="" value="1997-06-01" >
             </div>
             <div>
                 <label for="kilo" class="label">Quel est votre poids (en kg) ? :  </label>
-                <input type="text" name="kilo" class="input input-date" placeholder="Par ex : 53,40 kg" value="">
+                <input type="text" name="kilo" class="input input-date" placeholder="Par ex : 53,40 kg" value="79">
             </div>
             <div>
                 <label for="taille" class="label">Quel est votre taille (en cm) ? : </label>
-                <input type="text" name="taille" class="input input-taille" placeholder="Par ex : 189 si vous mesurez 1m89" value="">
+                <input type="text" name="taille" class="input input-taille" placeholder="Par ex : 189 si vous mesurez 1m89" value="189">
             </div>
             <button type="submit" class="btn">Envoyer</button>
         </form>
     </div>
-    <div>
+    <div class="info">
+        <div class="infoPerso">
 
+        </div>
+        <div class="bmi">
+
+        </div>
+        <div >
+            <p>Le dernier poids en notre possession est : <span class="dernier-poids"></span></p>
+            <p>Entrez votre poids du jour ci-dessous</p>
+            <form action="">
+                <input type="text" name="new-poids" placeholder="Par ex : 30,54" value="90">
+                <button type="submit" class="new-data">Envoyer</button>
+                <button type="submit" class="reinitialiser">Remettre a 0</button>
+            </form>
+        </div>
+        <div>
+            <canvas id="myChart"></canvas>
+        </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./src/js/app.js"></script>
 </body>
 </html>
